@@ -1,1 +1,2 @@
 Flask
+Flask-Migrate==2.7.0

@@ -11,12 +11,11 @@ class Config(object):
 
 
 class DevelopmentConfig(Config):
-    SQLALCHEMY_DATABASE_URI = "postgresql://conveyor@localhost/{db_name}"
     DEBUG = True
 
 
 class ProductionConfig(Config):
-    DEBUG = False
+    DEBUG = True
 
 
 class TestingConfig(Config):

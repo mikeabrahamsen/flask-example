@@ -13,7 +13,7 @@ def create_app(config_name="development"):
     app = Flask(__name__)
     app.config['SECRET_KEY'] = 'big!secret'
     db_name = "postgresdb"
-    app.config["SQLALCHEMY_DATABASE_URI"] = f"postgresql://postgresadmin:admin123@postgres-service/{db_name}"
+    app.config["SQLALCHEMY_DATABASE_URI"] = f"postgresql://conveyor:admin123@postgres-service/{db_name}"
     db.init_app(app)
     migrate.init_app(app, db)
 
